@@ -1,0 +1,7 @@
+1.新增批处理接口
+  source中新增isFinish方法，当read的batchsize两次都为0时改为finish
+  channel，主要是filechannel和memorychannel,spillable中新增isEmpty方法
+  增加定时轮询线程，扫描source和channle，完成则退出
+
+
+2.自定义source 主要实现AbstractSource 接口configure和process接口
